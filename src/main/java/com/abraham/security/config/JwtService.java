@@ -22,7 +22,7 @@ import org.springframework.stereotype.Service;
  * @author abrah
  */
 @Service
-class JwtService {
+public class JwtService {
 
     private static final String SECRET_KEY = "Np253gGX5PSl5deSPqc5DkvZ9lfj79FG";
     
