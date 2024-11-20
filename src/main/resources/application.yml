@@ -1,15 +1,14 @@
 spring:
-    datasource: 
-      url: jdbc:mysql://localhost:3306/jwt_security?useSSL=false&serverTimezone=UTC
-      username: root
-      password: root
-      driver-class-name: com.mysql.cj.jdbc.Driver
-    jpa:
-      hibernate:
-        ddl-auto: create-drop
-      show-sql: true
-      properties:
-        hibernate:
-        format_sql: true
-      database: mysql
-      database-platform: org.hibernate.dialect.MySQL8Dialect
+  datasource: 
+    url: jdbc:mysql://localhost:3306/jwt_security?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # Cambia a 'update' o 'none' en producción
+    show-sql: true
+    properties:
+      hibernate.format_sql: true # Corregida la indentación
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
